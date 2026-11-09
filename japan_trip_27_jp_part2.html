@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Japan Trip">
+<meta name="theme-color" content="#263d3a">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='38' fill='%23263d3a'/%3E%3Ctext x='90' y='115' text-anchor='middle' font-size='88' fill='%23f4d8a8' font-family='Arial'%3E旅%3C/text%3E%3C/svg%3E">
+<title>Japan Trip｜27 JP Part2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#263d3a;--accent:#b56f50;--paper:#f7f5f0;--card:#fffefa;--muted:#777d78;--line:#e8e3d9;--gold:#d6ae73}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:#303936;font-family:Inter,"Noto Sans TC",sans-serif;letter-spacing:.045em;touch-action:manipulation;-webkit-text-size-adjust:100%}
+.page{width:min(100%,430px);margin:auto;padding:20px 17px calc(38px + env(safe-area-inset-bottom))}
+.hero{background:var(--ink);color:#fffefa;border-radius:25px;padding:24px 21px;margin:5px 0 16px;box-shadow:0 8px 24px #263d3a20}
+.eyebrow{font-size:11px;letter-spacing:.2em;color:#e3c99f}.hero h1{font-size:29px;line-height:1.2;margin:9px 0}.hero p{font-size:13px;color:#e7e5dc;margin:7px 0 0}
+.pills{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px}.pill{border:1px solid #ffffff45;border-radius:99px;padding:6px 10px;font-size:11px}
+h2{font-size:19px;color:var(--ink);margin:25px 2px 12px}h3{font-size:15px;color:var(--ink);margin:0 0 10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin:10px 0;box-shadow:0 4px 15px #342c1c08}
+.flight-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.flight{background:#f7f4ed;border-radius:13px;padding:12px}.flight small{display:block;color:var(--muted);font-size:10px;margin-bottom:7px}.flight strong{display:block;color:var(--ink);font-size:18px}.flight span{display:block;font-size:12px;margin-top:6px;line-height:1.55}
+input,select,button{font:inherit;font-size:16px;touch-action:manipulation}input,select{width:100%;min-height:45px;border:1px solid #dcd8cf;border-radius:11px;padding:10px;background:#fffefa;color:#303936}button{border:0;border-radius:11px;padding:11px 14px;background:var(--ink);color:white;font-weight:600;cursor:pointer;min-height:44px}.secondary{background:#eee9df;color:var(--ink)}.danger{background:#9d5141}.smallbtn{min-height:38px;padding:8px 11px;font-size:13px}
+.money-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.money-grid .wide{grid-column:1/-1}.muted{color:var(--muted);font-size:12px;line-height:1.6}.total{font-size:25px;font-weight:700;color:var(--accent);margin-top:5px}
+details>summary{list-style:none;cursor:pointer;font-weight:700;color:var(--ink);display:flex;justify-content:space-between;align-items:center}details>summary::-webkit-details-marker{display:none}.summary-note{font-size:11px;color:var(--muted);font-weight:400}
+.tabs{display:flex;gap:7px;overflow-x:auto;padding:3px 0 10px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tabs label{white-space:nowrap;border:1px solid var(--line);border-radius:99px;padding:9px 13px;font-size:13px;color:var(--ink);background:#fffefa;cursor:pointer}
+input.tabradio{position:absolute;opacity:0;width:1px;height:1px}.tabradio#tab1:checked~.tabs label[for="tab1"],.tabradio#tab2:checked~.tabs label[for="tab2"],.tabradio#tab3:checked~.tabs label[for="tab3"],.tabradio#tab4:checked~.tabs label[for="tab4"],.tabradio#tab5:checked~.tabs label[for="tab5"],.tabradio#tab6:checked~.tabs label[for="tab6"],.tabradio#tab7:checked~.tabs label[for="tab7"],.tabradio#tab8:checked~.tabs label[for="tab8"],.tabradio#tab9:checked~.tabs label[for="tab9"],.tabradio#tabcheck:checked~.tabs label[for="tabcheck"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.panel{display:none}.panel-wrap{min-height:240px}.tabradio#tab1:checked~.panel-wrap #day1,.tabradio#tab2:checked~.panel-wrap #day2,.tabradio#tab3:checked~.panel-wrap #day3,.tabradio#tab4:checked~.panel-wrap #day4,.tabradio#tab5:checked~.panel-wrap #day5,.tabradio#tab6:checked~.panel-wrap #day6,.tabradio#tab7:checked~.panel-wrap #day7,.tabradio#tab8:checked~.panel-wrap #day8,.tabradio#tab9:checked~.panel-wrap #day9,.tabradio#tabcheck:checked~.panel-wrap #checklist{display:block}
+.section-kicker{font-size:10px;color:var(--accent);letter-spacing:.16em;font-weight:700}.day-title{font-size:23px;color:var(--ink);margin:4px 0 14px}
+.address{background:#f5f2eb;border-radius:12px;padding:12px;font-size:13px;line-height:1.65;overflow-wrap:anywhere;margin:8px 0}.address-actions{display:flex;justify-content:flex-end;margin-top:8px}
+.weather{display:flex;justify-content:space-between;align-items:center;gap:10px}.weather strong{font-size:17px;color:var(--ink)}.weather .status{font-size:13px;color:var(--accent);font-weight:700}
+a{color:#8b593f;text-decoration:underline;text-underline-offset:3px}.empty{padding:15px;border:1px dashed #d8d1c4;border-radius:13px;color:var(--muted);font-size:13px;line-height:1.7}
+.timeline{border-left:2px solid #e7d7c4;margin:10px 0 5px 5px;padding-left:15px}.timeline p{margin:0 0 12px;font-size:13px}
+.checkrow{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px}.checkrow input{width:20px;min-height:20px;margin:0;accent-color:var(--ink)}
+.statline{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line);font-size:12px}.notice{background:#f6eee4;color:#76543f;border-radius:12px;padding:11px;font-size:12px;line-height:1.65}
+footer{text-align:center;color:#9a9b93;font-size:10px;margin:25px 0 8px}
+@media(min-width:431px){.page{border-left:1px solid #eee8de;border-right:1px solid #eee8de;min-height:100vh}}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="hero">
+  <div class="eyebrow">TRAVEL JOURNAL · JAPAN</div>
+  <h1>27 JP Part2</h1>
+  <p>日本・01/16 — 01/24</p>
+  <div class="pills"><span class="pill">9天8夜</span><span class="pill">6位成人</span><span class="pill">幣別 JPY 日圓</span></div>
+</header>
+
+<h2>✈ 航班資訊</h2>
+<section class="card flight-grid">
+  <div class="flight"><small>去程 OUTBOUND</small><strong>CX450</strong><span>12:50 — 16:50<br>桃園機場第一航廈</span></div>
+  <div class="flight"><small>回程 RETURN</small><strong>CX451</strong><span>15:30 — 18:35<br>成田機場第二航廈</span></div>
+</section>
+
+<h2>💱 匯率換算</h2>
+<section class="card">
+  <div class="money-grid">
+    <div class="wide"><label class="muted" for="rate">匯率設定：1 JPY = 幾 TWD？</label><input id="rate" type="number" inputmode="decimal" min="0" step="0.0001" placeholder="請輸入匯率"></div>
+    <div><label class="muted" for="convertAmount">金額（日圓）</label><input id="convertAmount" type="number" inputmode="decimal" placeholder="例如 1000"></div>
+    <div><label class="muted">換算台幣</label><div class="total" id="converted">—</div></div>
+  </div>
+  <p class="muted">匯率由你自行輸入；目前未提供匯率，因此不預設數字。</p>
+</section>
+
+<h2>🧾 旅程記帳</h2>
+<section class="card">
+  <details id="expenseDetails" open>
+    <summary><span>記帳與統計</span><span class="summary-note">點此收合／展開　⌄</span></summary>
+    <div style="height:12px"></div>
+    <div class="money-grid">
+      <div><label class="muted" for="expenseDay">日期／天數</label><select id="expenseDay"><option value="Day 1">Day 1</option><option>Day 2</option><option>Day 3</option><option>Day 4</option><option>Day 5</option><option>Day 6</option><option>Day 7</option><option>Day 8</option><option>Day 9</option></select></div>
+      <div><label class="muted" for="category">分類</label><select id="category"><option>購物</option><option>食物</option><option>交通</option><option value="自訂">自行輸入</option></select></div>
+      <div class="wide" id="customCategoryWrap" hidden><label class="muted" for="customCategory">自訂分類</label><input id="customCategory" placeholder="輸入分類"></div>
+      <div class="wide"><label class="muted" for="expenseName">名稱</label><input id="expenseName" placeholder="輸入消費項目"></div>
+      <div><label class="muted" for="expenseAmount">金額</label><input id="expenseAmount" type="number" inputmode="decimal" min="0" step="any" placeholder="輸入金額"></div>
+      <div><label class="muted" for="expenseCurrency">幣別</label><select id="expenseCurrency"><option value="JPY">JPY 日圓</option><option value="TWD">TWD 台幣</option></select></div>
+      <div class="wide"><button id="addExpense" style="width:100%">＋ 新增記帳</button></div>
+    </div>
+    <div class="statline"><strong>累計台幣</strong><strong id="grandTotal">NT$ 0</strong></div>
+    <div id="expenseList" class="muted" style="margin-top:10px">目前尚無記帳資料。</div>
+    <h3 style="margin-top:18px">依天數統計</h3><div id="dayStats" class="muted">尚無資料</div>
+    <h3 style="margin-top:18px">依分類統計</h3><div id="categoryStats" class="muted">尚無資料</div>
+    <div id="clearArea" style="margin-top:14px"><button class="secondary smallbtn" id="clearStart">清空全部</button></div>
+    <p class="muted">記帳與收合狀態只保存在這台裝置的 Safari（localStorage）。請勿清除網站資料，以免遺失。</p>
+  </details>
+</section>
+
+<h2>🗓 每日行程</h2>
+<div class="tabs-area">
+<input class="tabradio" type="radio" name="daytab" id="tab1" checked><input class="tabradio" type="radio" name="daytab" id="tab2"><input class="tabradio" type="radio" name="daytab" id="tab3"><input class="tabradio" type="radio" name="daytab" id="tab4"><input class="tabradio" type="radio" name="daytab" id="tab5"><input class="tabradio" type="radio" name="daytab" id="tab6"><input class="tabradio" type="radio" name="daytab" id="tab7"><input class="tabradio" type="radio" name="daytab" id="tab8"><input class="tabradio" type="radio" name="daytab" id="tab9"><input class="tabradio" type="radio" name="daytab" id="tabcheck">
+<nav class="tabs">
+<label for="tab1">Day 1</label><label for="tab2">Day 2</label><label for="tab3">Day 3</label><label for="tab4">Day 4</label><label for="tab5">Day 5</label><label for="tab6">Day 6</label><label for="tab7">Day 7</label><label for="tab8">Day 8</label><label for="tab9">Day 9</label><label for="tabcheck">出發前確認</label>
+</nav>
+<div class="panel-wrap">
+<section class="panel" id="day1">
+  <div class="section-kicker">JAN 16 · DAY 01</div><div class="day-title">Day 1｜抵達日本</div>
+  <div class="card"><h3>住宿</h3><strong>Notte Agagio</strong><div class="address" id="address1">4 Chome-7-1 Ōi, Shinagawa City, Tokyo 140-0014日本</div><div class="address-actions"><button class="secondary smallbtn copyAddress" data-target="address1">複製地址</button></div></div>
+  <div class="card"><h3>天氣</h3><div class="weather"><strong>東京・品川</strong><span class="status">待確認</span></div><p class="muted">尚未提供年份，且目前無法據此確認該日預報。請出發前查詢天氣並依實際預報準備衣物。</p><a target="_blank" rel="noopener" href="https://www.google.com/search?q=Tokyo+Shinagawa+01%2F16+weather+forecast">查詢東京品川 01/16 天氣 ↗</a><p class="muted">資料來源：Google 搜尋連結（待查）｜查詢日期：尚未查詢</p></div>
+  <div class="card"><h3>時間軸</h3><div class="empty">目前沒有提供當日行程時間、地點或備註。</div></div>
+  <div class="card"><h3>候選餐廳／景點</h3><div class="empty">目前沒有提供候選餐廳、景點或按摩 Spa 資料。</div></div>
+  <div class="card"><h3>當天附近健身房／備案</h3><div class="empty">沒有提供相關資料，未新增未經確認的地點。</div></div>
+</section>
+<section class="panel" id="day2">
+  <div class="section-kicker">DAY 02</div><div class="day-title">Day 2</div>
+  <div class="card"><h3>住宿／地址</h3><div class="empty">尚未提供 Day 2 住宿資料。</div></div>
+  <div class="card"><h3>天氣</h3><div class="weather"><strong>日本・所在地待確認</strong><span class="status">待確認</span></div><p class="muted">尚未提供當日所在地與年份，沒有可可靠對應的預報數字。請出發前查詢，勿以此卡片作為即時天氣資訊。</p><a target="_blank" rel="noopener" href="https://www.google.com/search?q=Japan+01%2F17+weather+forecast">搜尋日本 01/17 天氣 ↗</a><p class="muted">資料來源：Google 搜尋連結（待查）｜查詢日期：尚未查詢</p></div>
+  <div class="card"><h3>時間軸</h3><div class="empty">尚未提供當日行程。</div></div>
+  <div class="card"><h3>候選餐廳／景點</h3><div class="empty">尚未提供候選地點。</div></div>
+  <div class="card"><h3>當天附近健身房／備案</h3><div class="empty">尚未提供相關資料。</div></div>
+</section>
+<section class="panel" id="day3">
+  <div class="section-kicker">DAY 03</div><div class="day-title">Day 3</div>
+  <div class="card"><h3>住宿／地址</h3><div class="empty">尚未提供 Day 3 住宿資料。</div></div>
+  <div class="card"><h3>天氣</h3><div class="weather"><strong>日本・所在地待確認</strong><span class="status">待確認</span></div><p class="muted">尚未提供當日所在地與年份，沒有可可靠對應的預報數字。請出發前查詢，勿以此卡片作為即時天氣資訊。</p><a target="_blank" rel="noopener" href="https://www.google.com/search?q=Japan+01%2F18+weather+forecast">搜尋日本 01/18 天氣 ↗</a><p class="muted">資料來源：Google 搜尋連結（待查）｜查詢日期：尚未查詢</p></div>
+  <div class="card"><h3>時間軸</h3><div class="empty">尚未提供當日行程。</div></div>
+  <div class="card"><h3>候選餐廳／景點</h3><div class="empty">尚未提供候選地點。</div></div>
+  <div class="card"><h3>當天附近健身房／備案</h3><div class="empty">尚未提供相關資料。</div></div>
+</section>
+<section class="panel" id="day4">
+  <div class="section-kicker">DAY 04</div><div class="day-title">Day 4</div>
+  <div class="card"><h3>住宿／地址</h3><div class="empty">尚未提供 Day 4 住宿資料。</div></div>
+  <div class="card"><h3>天氣</h3><div class="weather"><strong>日本・所在地待確認</strong><span class="status">待確認</span></div><p class="muted">尚未提供當日所在地與年份，沒有可可靠對應的預報數字。請出發前查詢，勿以此卡片作為即時天氣資訊。</p><a target="_blank" rel="noopener" href="https://www.google.com/search?q=Japan+01%2F19+weather+forecast">搜尋日本 01/19 天氣 ↗</a><p class="muted">資料來源：Google 搜尋連結（待查）｜查詢日期：尚未查詢</p></div>
+  <div class="card"><h3>時間軸</h3><div class="empty">尚未提供當日行程。</div></div>
+  <div class="card"><h3>候選餐廳／景點</h3><div class="empty">尚未提供候選地點。</div></div>
+  <div class="card"><h3>當天附近健身房／備案</h3><div class="empty">尚未提供相關資料。</div></div>
+</section>
+<section class="panel" id="day5">
+  <div class="section-kicker">DAY 05</div><div class="day-title">Day 5</div>
+  <div class="card"><h3>住宿／地址</h3><div class="empty">尚未提供 Day 5 住宿資料。</div></div>
+  <div class="card"><h3>天氣</h3><div class="weather"><strong>日本・所在地待確認</strong><span class="status">待確認</span></div><p class="muted">尚未提供當日所在地與年份，沒有可可靠對應的預報數字。請出發前查詢，勿以此卡片作為即時天氣資訊。</p><a target="_blank" rel="noopener" href="https://www.google.com/search?q=Japan+01%2F20+weather+forecast">搜尋日本 01/20 天氣 ↗</a><p class="muted">資料來源：Google 搜尋連結（待查）｜查詢日期：尚未查詢</p></div>
+  <div class="card"><h3>時間軸</h3><div class="empty">尚未提供當日行程。</div></div>
+  <div class="card"><h3>候選餐廳／景點</h3><div class="empty">尚未提供候選地點。</div></div>
+  <div class="card"><h3>當天附近健身房／備案</h3><div class="empty">尚未提供相關資料。</div></div>
+</section>
+<section class="panel" id="day6">
+  <div class="section-kicker">DAY 06</div><div class="day-title">Day 6</div>
+  <div class="card"><h3>住宿／地址</h3><div class="empty">尚未提供 Day 6 住宿資料。</div></div>
+  <div class="card"><h3>天氣</h3><div class="weather"><strong>日本・所在地待確認</strong><span class="status">待確認</span></div><p class="muted">尚未提供當日所在地與年份，沒有可可靠對應的預報數字。請出發前查詢，勿以此卡片作為即時天氣資訊。</p><a target="_blank" rel="noopener" href="https://www.google.com/search?q=Japan+01%2F21+weather+forecast">搜尋日本 01/21 天氣 ↗</a><p class="muted">資料來源：Google 搜尋連結（待查）｜查詢日期：尚未查詢</p></div>
+  <div class="card"><h3>時間軸</h3><div class="empty">尚未提供當日行程。</div></div>
+  <div class="card"><h3>候選餐廳／景點</h3><div class="empty">尚未提供候選地點。</div></div>
+  <div class="card"><h3>當天附近健身房／備案</h3><div class="empty">尚未提供相關資料。</div></div>
+</section>
+<section class="panel" id="day7">
+  <div class="section-kicker">DAY 07</div><div class="day-title">Day 7</div>
+  <div class="card"><h3>住宿／地址</h3><div class="empty">尚未提供 Day 7 住宿資料。</div></div>
+  <div class="card"><h3>天氣</h3><div class="weather"><strong>日本・所在地待確認</strong><span class="status">待確認</span></div><p class="muted">尚未提供當日所在地與年份，沒有可可靠對應的預報數字。請出發前查詢，勿以此卡片作為即時天氣資訊。</p><a target="_blank" rel="noopener" href="https://www.google.com/search?q=Japan+01%2F22+weather+forecast">搜尋日本 01/22 天氣 ↗</a><p class="muted">資料來源：Google 搜尋連結（待查）｜查詢日期：尚未查詢</p></div>
+  <div class="card"><h3>時間軸</h3><div class="empty">尚未提供當日行程。</div></div>
+  <div class="card"><h3>候選餐廳／景點</h3><div class="empty">尚未提供候選地點。</div></div>
+  <div class="card"><h3>當天附近健身房／備案</h3><div class="empty">尚未提供相關資料。</div></div>
+</section>
+<section class="panel" id="day8">
+  <div class="section-kicker">DAY 08</div><div class="day-title">Day 8</div>
+  <div class="card"><h3>住宿／地址</h3><div class="empty">尚未提供 Day 8 住宿資料。</div></div>
+  <div class="card"><h3>天氣</h3><div class="weather"><strong>日本・所在地待確認</strong><span class="status">待確認</span></div><p class="muted">尚未提供當日所在地與年份，沒有可可靠對應的預報數字。請出發前查詢，勿以此卡片作為即時天氣資訊。</p><a target="_blank" rel="noopener" href="https://www.google.com/search?q=Japan+01%2F23+weather+forecast">搜尋日本 01/23 天氣 ↗</a><p class="muted">資料來源：Google 搜尋連結（待查）｜查詢日期：尚未查詢</p></div>
+  <div class="card"><h3>時間軸</h3><div class="empty">尚未提供當日行程。</div></div>
+  <div class="card"><h3>候選餐廳／景點</h3><div class="empty">尚未提供候選地點。</div></div>
+  <div class="card"><h3>當天附近健身房／備案</h3><div class="empty">尚未提供相關資料。</div></div>
+</section>
+<section class="panel" id="day9">
+  <div class="section-kicker">DAY 09</div><div class="day-title">Day 9</div>
+  <div class="card"><h3>住宿／地址</h3><div class="empty">尚未提供 Day 9 住宿資料。</div></div>
+  <div class="card"><h3>天氣</h3><div class="weather"><strong>日本・所在地待確認</strong><span class="status">待確認</span></div><p class="muted">尚未提供當日所在地與年份，沒有可可靠對應的預報數字。請出發前查詢，勿以此卡片作為即時天氣資訊。</p><a target="_blank" rel="noopener" href="https://www.google.com/search?q=Japan+01%2F24+weather+forecast">搜尋日本 01/24 天氣 ↗</a><p class="muted">資料來源：Google 搜尋連結（待查）｜查詢日期：尚未查詢</p></div>
+  <div class="card"><h3>時間軸</h3><div class="empty">尚未提供當日行程。</div></div>
+  <div class="card"><h3>候選餐廳／景點</h3><div class="empty">尚未提供候選地點。</div></div>
+  <div class="card"><h3>當天附近健身房／備案</h3><div class="empty">尚未提供相關資料。</div></div>
+</section>
+<section class="panel" id="checklist">
+<div class="section-kicker">BEFORE DEPARTURE</div><div class="day-title">出發前確認清單</div>
+<div class="notice">目前你填寫的出發前待辦與行李／穿搭清單皆為「無」，因此不自行新增項目。你可以在之後提供清單內容，我再幫你加入可勾選項目。</div>
+<div class="card"><h3>出發前待辦</h3><p class="muted">目前沒有提供待辦項目。</p><div id="pretripChecks"></div></div>
+<div class="card"><h3>行李／穿搭清單</h3><p class="muted">目前沒有提供行李清單項目。</p><div id="packingChecks"></div></div>
+</section>
+</div></div>
+<footer>JAPAN TRIP · 27 JP PART2<br>旅程資料以你提供的內容為準</footer>
+</main>
+<script>
+(function(){
+const $=id=>document.getElementById(id);
+const safeGet=(k,f)=>{try{const v=localStorage.getItem(k);return v===null?f:JSON.parse(v)}catch(e){return f}};
+const safeSet=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v));return true}catch(e){return false}};
+const rate=$('rate'), convertAmount=$('convertAmount'), converted=$('converted');
+rate.value=safeGet('jp_rate',''); rate.addEventListener('input',()=>{safeSet('jp_rate',rate.value);convert()});
+convertAmount.addEventListener('input',convert);
+function convert(){const r=Number(rate.value),a=Number(convertAmount.value);converted.textContent=rate.value!==''&&convertAmount.value!==''&&r>0?'NT$ '+(a*r).toLocaleString('zh-TW',{maximumFractionDigits:2}):'—'}
+const details=$('expenseDetails');details.open=safeGet('jp_expense_open',true);details.addEventListener('toggle',()=>safeSet('jp_expense_open',details.open));
+let expenses=safeGet('jp_expenses',[]);
+const category=$('category');category.addEventListener('change',()=>$('customCategoryWrap').hidden=category.value!=='自訂');
+function twd(item){if(item.currency==='TWD')return item.amount;const r=Number(rate.value);return r>0?item.amount*r:null}
+function render(){
+ const list=$('expenseList'),dayStats=$('dayStats'),catStats=$('categoryStats');
+ if(!expenses.length){list.textContent='目前尚無記帳資料。';dayStats.textContent='尚無資料';catStats.textContent='尚無資料';$('grandTotal').textContent='NT$ 0';return}
+ list.innerHTML='';let total=0,days={},cats={};
+ expenses.forEach((e,i)=>{const val=twd(e);if(val!==null){total+=val;days[e.day]=(days[e.day]||0)+val;cats[e.category]=(cats[e.category]||0)+val}
+ const row=document.createElement('div');row.className='statline';
+ const left=document.createElement('span');left.textContent=e.day+' · '+e.category+' · '+e.name+' ('+e.amount+' '+e.currency+')';
+ const right=document.createElement('span');right.textContent=val===null?'匯率待填':'NT$ '+val.toLocaleString('zh-TW',{maximumFractionDigits:2});
+ row.append(left,right);list.append(row);
+ });
+ $('grandTotal').textContent='NT$ '+total.toLocaleString('zh-TW',{maximumFractionDigits:2});
+ dayStats.innerHTML='';Object.entries(days).forEach(([k,v])=>{const r=document.createElement('div');r.className='statline';r.textContent=k+'：NT$ '+v.toLocaleString('zh-TW',{maximumFractionDigits:2});dayStats.append(r)});
+ catStats.innerHTML='';Object.entries(cats).forEach(([k,v])=>{const r=document.createElement('div');r.className='statline';r.textContent=k+'：NT$ '+v.toLocaleString('zh-TW',{maximumFractionDigits:2});catStats.append(r)});
+}
+$('addExpense').addEventListener('click',()=>{
+ const name=$('expenseName').value.trim(),amount=Number($('expenseAmount').value),cat=category.value==='自訂'?$('customCategory').value.trim():category.value;
+ if(!name||$('expenseAmount').value===''||!Number.isFinite(amount)||amount<0||!cat){$('expenseName').focus();return}
+ expenses.push({day:$('expenseDay').value,category:cat,name,amount,currency:$('expenseCurrency').value});
+ safeSet('jp_expenses',expenses);$('expenseName').value='';$('expenseAmount').value='';render();
+});
+function bindClear(){
+ $('clearStart').addEventListener('click',()=>{
+  const area=$('clearArea');
+  area.innerHTML='<p class="muted">確定要刪除這台裝置儲存的全部記帳資料嗎？此動作無法復原。</p><button class="danger smallbtn" id="clearYes">再次確認清空</button> <button class="secondary smallbtn" id="clearNo">取消</button>';
+  $('clearYes').addEventListener('click',()=>{expenses=[];safeSet('jp_expenses',expenses);area.innerHTML='<button class="secondary smallbtn" id="clearStart">清空全部</button>';bindClear();render()});
+  $('clearNo').addEventListener('click',()=>{area.innerHTML='<button class="secondary smallbtn" id="clearStart">清空全部</button>';bindClear()});
+ });
+}
+bindClear();
+document.querySelectorAll('.copyAddress').forEach(btn=>btn.addEventListener('click',async()=>{
+ const el=$(btn.dataset.target),text=el.innerText;
+ try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);btn.textContent='已複製 ✓';return}}catch(e){}
+ const range=document.createRange();range.selectNodeContents(el);const sel=window.getSelection();sel.removeAllRanges();sel.addRange(range);btn.textContent='已選取，請點選複製';
+}));
+render();
+})();
+</script>
+</body></html>
